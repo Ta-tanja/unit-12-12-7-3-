@@ -6,4 +6,6 @@ skb = money / 100 * per_cent["СКБ"]
 vtb = money / 100 * per_cent["ВТБ"]
 sber = money / 100 * per_cent["СБЕР"]
 deposit = [tkb, vtb, skb, sber]
-print(deposit)
+deposit_spiskom = [tkb, skb, vtb, sber]
+max_value = max(deposit_spiskom)
+print("Максимальная сумма, которую вы можете заработать - ", round(max_value, 2))
